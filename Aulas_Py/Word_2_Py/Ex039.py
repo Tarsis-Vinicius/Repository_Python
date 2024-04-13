@@ -10,9 +10,13 @@ print("Quem nasceu em {} tem {} anos em {}.".format(nasc, idade, atual))
 
 if idade == 18:
     print("Voce tem que se alistar imediatamente!!")
+
 elif idade < 18:
     saldo = 18 - idade
-    print ("Ainda faltam {} anos para o seu alistamento".format(saldo))
+    ano = atual + saldo
+    print("Ainda faltam {} anos para o seu alistamento".format(saldo))
+    print("Seu alistamento sera em {} ".format(ano))
+
 elif idade > 18:
     saldo = idade - 18
-    print ("Voce ja deveria ter se alistando ha {} anos. ".format(saldo))
+    print("Voce ja deveria ter se alistando ha {} anos. ".format(saldo))
